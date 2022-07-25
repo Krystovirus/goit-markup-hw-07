@@ -35,16 +35,19 @@
     color: var(--primary-color);}
 &__socials {
 &-list {display: flex; flex-direction: row;}
-
-&-item:not(:last-child) {margin-right: var(--margin-social);}
-
-&-icon { fill: var(--footer-vector); }
-
-&-icon:hover,
-&-link:focus &-icon {fill: var(--color-logo);}
-&-item , &-icon {width: 2.75rem; height: 2.75rem;}
-&-link , &-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+&-item {
+&:not(:last-child) {margin-right: var(--margin-social);}
 }
+&-link {
+&-icon { fill: var(--footer-vector); 
+&:hover {fill: var(--color-logo);}}
+&:focus &-icon {fill: var(--color-logo);}
+
+& , &-icon { transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+}
+&-item , &-link-icon {width: 2.75rem; height: 2.75rem;}
+}
+
 &__form {display: flex; flex-direction: row; justify-content: center; align-items: flex-end;}
 
 &__form-field-box {display: flex; flex-direction: column; justify-content: center; align-items: flex-start; margin-left: 5.8125rem; margin-right: 0.75rem;}
