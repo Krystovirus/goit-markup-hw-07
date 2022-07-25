@@ -4,6 +4,7 @@
     line-height: 1.9375rem;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-right: var(--common-padding);}
-.logo--colored {color: var(--color-logo);}
-.logo--light {color: var(--primary-color);}
+    margin-right: var(--common-padding);
+&--colored {color: var(--color-logo);}
+&--light {color: var(--primary-color);}
+}

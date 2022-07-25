@@ -3,12 +3,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100rem;
-    border: 0.0625rem solid var(--secondary-color);}
+    border: 0.0625rem solid var(--secondary-color);
 
-.hero-section__content {align-self: center; display: flex;
+&__content {align-self: center; display: flex;
     justify-content: space-between; flex-direction: column;}
 
-.hero-section__title {
+&__title {
     width: 43.5rem;
     font-weight: 900;
     font-size: var(--headline-size);
@@ -21,10 +21,12 @@
     align-self: center;
     color: var(--primary-color);}
 
-.hero-section__button {
+&__button {
     padding: 0.5rem 2.3125rem;
     font-weight: 700;
     line-height: 1.875rem;
-    align-self: center;}
-.hero-section__button:hover,
-.hero-section__button:focus {background: var(--button-hover);}
+    align-self: center;
+&:hover,
+&:focus {background: var(--button-hover);}
+}
+}
